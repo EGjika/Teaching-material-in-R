@@ -1,0 +1,130 @@
+---
+title: "Model Raporti- Master Shkencor IMI-1"
+subtitle: "Detyra 1: ketu vendoset tema juaj"
+author: "Studenti: Emri Mbiemri  ___________  Pedagogu:Eralda Gjika"
+date: "07 Prill 2022"
+output: html_notebook
+---
+
+
+Funksioni ne vijim eshte nje funksion i ndertuar per te ngjyrosur text ne material, kujdes mos e perdorni shume , perdoreni me vend. 
+
+```{r}
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+      x)
+  } else x
+}
+```
+
+Shembull:
+
+**`r colorize("Afati i dorezimit te projektit eshte dt .......","red")`**
+
+**text** perdoren per te bere BOLD text
+*text* perdoret per te bere italic text
+
+Kodi ne vijim do t'ju krijoje disa tab
+
+## Projekti final {.tabset}
+### Hyrje
+Ne kete tab ju do te pershkruani arsyet e projektit, info dhe cka ekziston ne materiale ne web apo publikime dhe cfare synoni ju te arrini. 
+
+Tregoni edhe librarite qe keni perodur ne kete studim (listojini te gjitha)
+Per shembull :
+```{r}
+library(tidytext)
+library(dplyr)
+library(tidyr)
+library(tidyverse)
+library(jsonlite)
+library(widyr)
+library(igraph)
+library(ggraph)
+library(stringr)
+library(tm)
+set.seed(1234)
+```
+
+
+### `r colorize("Perpunimi i te dhenave","blue")`
+`r colorize("Perpunimi","red")`
+
+Ketu vendosni fazen para pergatitore , cdo veprim shpjegojeni edhe me komente ne kod edhe me text paragraf duke arsyetuar rezultatet grafike apo teste numerike qe keni bere. Ju lutem kujdesuni te beni pak dhe sakte !!
+
+**VINI RE!!!** Cdo (tre) hashtag ### do krijojne nje tab te ri. 
+Brenda atij tab mund te perdorni vetem hashtag (kater) e siper per te ndryshuar text ne paragraf.
+Pershembull:
+
+#### Korrelacioni
+sjdhjdhfkhd
+ajsdjshds
+
+```{r}
+
+```
+
+
+#### Grafike
+djksdf
+jsgsjdj
+.
+.
+..
+End
+
+
+
+### `r colorize("Analiza e te dhenave","green")`
+`r colorize("Analiza","green")`
+
+ketu do te beni analizen e te dhenave tuaja, modelet, simulime etj veprime qe lidhen me to.
+.
+.
+.
+.
+.
+End
+
+
+### `r colorize("Tab tjeter","orange")`
+`r colorize("Tab tjeter","red")`
+
+Ketu mund te shtoni analizat me te dhenat tuaja. 
+.
+.
+.
+.
+.
+End
+
+
+### `r colorize("Perfundimet","purple")`
+`r colorize("Perfundimet  e studimit","red")`
+
+Ketu do te vendosni perfundimet e studimit tuaj, rekomandime dhe diskutime te hapura per te ardhmen. 
+Mangesite e tij (nese ka)
+
+.
+.
+.
+..
+.
+.End
+
+
+### `r colorize("Referenca","pink")`
+`r colorize("Referenca","red")`
+
+Ketu do te vensosni te gjitha refrencat qe keni perdorur. Qofshin link nga web, artikuj shkencore, github, Rpubs, libra , pra cdo reference. 
+.
+.
+.
+.
+.
+.
+.
+End
